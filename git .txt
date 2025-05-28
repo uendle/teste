@@ -33,6 +33,11 @@ git log --> exibe a ordem dos commits
 	git log -3 -->exibe os 3 ultimo commits
 		git log --oneline -->exibe todos os commmit em uma linha
 			git log --oneline -5 -->exibe os 5 ultimos commmit em uma linha
-				git log --online -2 --graph --> exive graficamente os commits
+				git log --online -2 --graph --> exive graficamente os commits e ramificações
+					git log --author="nome_do_autor" --> exibe todos os commits do autor
+						git log --before="2025-5-29" --> lista todos os commits feitos antes dessa data
+							git log nome_do_arqivo -->lista os commits desse arquivo
+								
+					
 		
 

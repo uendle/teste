@@ -1,0 +1,30 @@
+git --> ferramenta para controle de versão
+
+git config --global user.name "nome_de_usuario" --> configura um usuario global
+
+git config --global user.email "email_do_usuario" --> configura um usuario global
+
+git config --global --lista --> lista os dados do usuario global
+
+git config --list --> lista todos os usuarios locais e globais
+
+git init --> cria um novo repositorio local
+
+git clone https://github.com/diretorios.git nome_do_diretorio -->clona o diretorios para a pasta criada
+
+git status --> visualiza os arquivos no diretorios git
+
+git add . --> move todos os arquivos para o stage
+	git add nome_do_arquivo  --> move o arquivo para o stage
+		git add *.html --> move todos os arquivos .html para o stage
+		
+git reset nome_do_arquivo --> remove do stage arquivo
+
+git restore nome_do_arquivo --> restaura do stage arquivo 
+
+git diff --> exibe as mudancas do arquivo no direterorio versos os arquivos no stage
+
+
+
+		
+

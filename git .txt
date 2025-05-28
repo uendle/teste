@@ -23,8 +23,14 @@ git reset nome_do_arquivo --> remove do stage arquivo
 git restore nome_do_arquivo --> restaura do stage arquivo 
 
 git diff --> exibe as mudancas do arquivo no direterorio versos os arquivos no stage
+	git diff --staged --> exibe as mudanças entreo o staged e o commit
 
+git commit -m "descrição do commit" --> commita os arquivos 
+	git commit -a -m "descriçao do commit" --> coloca no stage e ja commita
+		git commit --amend -m "descriçao do commit" --> sobscreve o ultimo commit
 
-
+git log --> exibe a ordem dos commits
+	git log -3 -->exibe os 3 ultimo commits
+		git log --oneline exibe todos os commmit em uma linha
 		
 

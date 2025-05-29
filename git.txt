@@ -68,6 +68,7 @@ git remote add origin endereço.git --> adiciona repositorio remoto
 git push -u origin nome_da_branch --> envia os commits(da branch) para o repositorio remoto
 	git push origin nome_da_tag --> envia a tag para o repositorio remoto
 		git push origin --delete nome_da_tag --> remove a tar do repositorio remoto
+			git push origin main --force --> força o envio de um conmit anterior ao do repositorio remoto
 
 git pull origin main --> puxa as mudanças do repositorio remoto
 
@@ -89,3 +90,5 @@ git tag nome_da_tag --> adiciona uma tag ao ultimo commit
 git stash --> pega todas as mudanças e salva em um arquivo temporario
 	git stash apply --> mantem o stash e aplica a mudança na nova branch
 		git stash pop --> apaga o stash e aplica a mudança na nova branch
+		
+

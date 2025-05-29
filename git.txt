@@ -28,6 +28,9 @@ git diff --> exibe as mudancas do arquivo no direterorio versos os arquivos no s
 git commit -m "descrição do commit" --> commita os arquivos 
 	git commit -a -m "descriçao do commit" --> coloca no stage e ja commita
 		git commit --amend -m "descriçao do commit" --> sobscreve o ultimo commit
+			git commit --amend --> abre o editor para colocar a descrição
+
+git revert 8h8unag9r8h(hash) --> volta os arquivos para versao do hash do commit salvando em outro commit as mudanças atuais
 
 git log --> exibe a ordem dos commits
 	git log -3 -->exibe os 3 ultimo commits
@@ -83,4 +86,6 @@ git tag nome_da_tag --> adiciona uma tag ao ultimo commit
 		git tag -a nome_da_tag -m "descriçao de uma tag anotada"
 
 
-
+git stash --> pega todas as mudanças e salva em um arquivo temporario
+	git stash apply --> mantem o stash e aplica a mudança na nova branch
+		git stash pop --> apaga o stash e aplica a mudança na nova branch

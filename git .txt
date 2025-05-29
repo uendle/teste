@@ -7,8 +7,6 @@ git config --global user.name "nome_de_usuario" --> configura um usuario global
 
 git init --> cria um novo repositorio local
 
-git clone https://github.com/diretorios.git nome_do_diretorio -->clona o diretorios para a pasta criada
-
 git status --> visualiza os arquivos no diretorios git
 
 git add . --> move todos os arquivos para o stage
@@ -51,5 +49,16 @@ git checkout -b nome_da_branch --> cria e ja muda a branch atual
 	git checkout nome_da branch --> muda a branch
 
 
+git remote add origin endereço.git --> adiciona repositorio remoto
+	git remote -v --> exibe os repositorios remotos
+		git remote remove origin --> remove orepositorio remoto(apelido origin) do local
+			git remote show origin --> exibe informaçoes do repositorio remoto
+				git remote set-url origin nova_url --> atualiza ou troca a url do repositorio remoto
+	
+git push -u origin nome_da_branch --> envia os commits(da branch) para o repositorio remoto
 
+git pull origin main --> puxa as mudanças do repositorio remoto
 
+git clone https://github.com/diretorios.git nome_do_diretorio -->clona o diretorios para a pasta criada
+
+git merge outra_branch --> traz as mudancas de outra branch para a atual

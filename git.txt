@@ -1,0 +1,86 @@
+git --> ferramenta para controle de versão
+
+git config --global user.name "nome_de_usuario" --> configura um usuario global
+	git config --global user.email "email_do_usuario" --> configura um usuario global
+		git config --global --lista --> lista os dados do usuario global
+			git config --list --> lista todos os usuarios locais e globais
+
+git init --> cria um novo repositorio local
+
+git status --> visualiza os arquivos no diretorios git
+
+git add . --> move todos os arquivos para o stage
+	git add nome_do_arquivo  --> move o arquivo para o stage
+		git add *.html --> move todos os arquivos .html para o stage
+		
+git reset nome_do_arquivo --> remove do stage arquivo
+	git reset --soft HEAD~1 --> apaga o ultimo commit mais mantem as mudanças no stagin
+		git reset --hard HEAD~1 volta para o commit anterior e descarta todas as mudanças
+			
+
+git restore nome_do_arquivo --> restaura do stage arquivo 
+
+git diff --> exibe as mudancas do arquivo no direterorio versos os arquivos no stage
+	git diff --staged --> exibe as mudanças entreo o staged e o commit
+		git diff uma_branch outra_branch --> exibe as diferenças entre os arquivos nas branch
+	
+
+git commit -m "descrição do commit" --> commita os arquivos 
+	git commit -a -m "descriçao do commit" --> coloca no stage e ja commita
+		git commit --amend -m "descriçao do commit" --> sobscreve o ultimo commit
+
+git log --> exibe a ordem dos commits
+	git log -3 -->exibe os 3 ultimo commits
+		git log --oneline -->exibe todos os commmit em uma linha(hash)
+			git log --oneline -5 -->exibe os 5 ultimos commmit em uma linha
+				git log --online -2 --graph --> exive graficamente os commits e ramificações
+					git log --author="nome_do_autor" --> exibe todos os commits do autor
+						git log --before="2025-5-29" --> lista todos os commits feitos antes dessa data
+							git log nome_do_arqivo -->lista os commits desse arquivo
+								git log nome_da_branch --> exibe o log da branch
+
+git reflog --> exibe o log de forma mais resumida
+
+git shotlog --> exibe o log de forma mais curta
+
+git show --> exibe detalhes de um commit
+	git show nome_da_tag --> exibe detalhe do commit/tag
+
+git branch --> exibe as ramifricações(branch)
+	git branch nome_da_branch --> cria uma branch
+		git branch -D dev --> elimina a branch
+			git branch -m novo_nome --> muda o nome da branch atual
+
+git checkout -b nome_da_branch --> cria e ja muda a branch atual
+	git checkout nome_da branch --> muda a branch
+		git checkout -- nome_do_arquivo --> restaura o arquivo do stage
+
+
+git remote add origin endereço.git --> adiciona repositorio remoto
+	git remote -v --> exibe os repositorios remotos
+		git remote remove origin --> remove orepositorio remoto(apelido origin) do local
+			git remote show origin --> exibe informaçoes do repositorio remoto
+				git remote set-url origin nova_url --> atualiza ou troca a url do repositorio remoto
+	
+git push -u origin nome_da_branch --> envia os commits(da branch) para o repositorio remoto
+	git push origin nome_da_tag --> envia a tag para o repositorio remoto
+		git push origin --delete nome_da_tag --> remove a tar do repositorio remoto
+
+git pull origin main --> puxa as mudanças do repositorio remoto
+
+git clone https://github.com/diretorios.git nome_do_diretorio -->clona o diretorios para a pasta criada
+
+git merge outra_branch --> traz as mudancas de outra branch para a atual
+	git merge --abort --> caso haja conflito e deseje abortar as mudanças
+		git merge --continue --> apos resolver as mudanças finaliza o merge(apos resolver e comitar)
+		
+git rebase outr_branch --> tras as mudanças de outra branch para a atual(UNI AS RAMIFICAÇÕES)
+	git rebase --abort --> caso haja conflito e deseje abortar as mudanças
+		git rebase --continue --> apos resolver as mudanças finaliza o rebase(apos resolver e comitar)
+
+git tag nome_da_tag --> adiciona uma tag ao ultimo commit
+	git tag -d nome_da_tag --> remove a tar do ultimo commit
+		git tag -a nome_da_tag -m "descriçao de uma tag anotada"
+
+
+

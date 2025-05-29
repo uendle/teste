@@ -37,7 +37,8 @@ git log --> exibe a ordem dos commits
 					git log --author="nome_do_autor" --> exibe todos os commits do autor
 						git log --before="2025-5-29" --> lista todos os commits feitos antes dessa data
 							git log nome_do_arqivo -->lista os commits desse arquivo
-								
-					
-		
+
+git reflog --> exibe o log de forma mais resumida
+git shotlog --> exibe o log de forma mais curta
+
 

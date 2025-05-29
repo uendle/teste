@@ -37,8 +37,20 @@ git log --> exibe a ordem dos commits
 					git log --author="nome_do_autor" --> exibe todos os commits do autor
 						git log --before="2025-5-29" --> lista todos os commits feitos antes dessa data
 							git log nome_do_arqivo -->lista os commits desse arquivo
+								git log nome_da_branch --> exibe o log da branch
 
 git reflog --> exibe o log de forma mais resumida
+
 git shotlog --> exibe o log de forma mais curta
+
+git branch --> exibe as ramifricações(branch)
+	git branch nome_da_branch --> cria uma branch
+		git branch -D dev --> elimina a branch
+			git branch -m novo_nome --> muda o nome da branch atual
+
+git checkout -b nome_da_branch --> cria e ja muda a branch atual
+	git checkout nome_da branch --> muda a branch
+
+
 
 

@@ -40,6 +40,9 @@ git reflog --> exibe o log de forma mais resumida
 
 git shotlog --> exibe o log de forma mais curta
 
+git show --> exibe detalhes de um commit
+	git show nome_da_tag --> exibe detalhe do commit/tag
+
 git branch --> exibe as ramifricações(branch)
 	git branch nome_da_branch --> cria uma branch
 		git branch -D dev --> elimina a branch
@@ -56,6 +59,8 @@ git remote add origin endereço.git --> adiciona repositorio remoto
 				git remote set-url origin nova_url --> atualiza ou troca a url do repositorio remoto
 	
 git push -u origin nome_da_branch --> envia os commits(da branch) para o repositorio remoto
+	git push origin nome_da_tag --> envia a tag para o repositorio remoto
+		git push origin --delete nome_da_tag --> remove a tar do repositorio remoto
 
 git pull origin main --> puxa as mudanças do repositorio remoto
 
@@ -68,3 +73,7 @@ git merge outra_branch --> traz as mudancas de outra branch para a atual
 git rebase outr_branch --> tras as mudanças de outra branch para a atual(UNI AS RAMIFICAÇÕES)
 	git rebase --abort --> caso haja conflito e deseje abortar as mudanças
 		git rebase --continue --> apos resolver as mudanças finaliza o rebase(apos resolver e comitar)
+
+git tag nome_da_tag --> adiciona uma tag ao ultimo commit
+	git tag -d nome_da_tag --> remove a tar do ultimo commit
+		git tag -a nome_da_tag -m "descriçao de uma tag anotada"

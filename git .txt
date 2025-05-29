@@ -65,4 +65,4 @@ git merge outra_branch --> traz as mudancas de outra branch para a atual
 	git merge --abort --> caso haja conflito e deseje abortar as mudanças
 		git merge --continue --> apos resolver as mudanças finaliza o merge(apos resolver e comitar)
 		
-
+git rebase outr_branch --> tras as mudanças de outra branch para a atual
